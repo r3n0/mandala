@@ -54,7 +54,7 @@ function setBehavior(i) {
   params[0] = random(10);
   params[1] = random(10);
   params[2] = random(0.00001, 0.1); // rango de rotación
-  params[3] = random(0.001, 0.00001); //velosidad de rotación
+  params[3] = random(0.001, 0.000001); //velosidad de rotación
   params[4] = random(0.01, 0.00001); // velosidad de tamaño
   params[5] = random(1, diametro / 35)
   params[6] = random(1) < 0.7 ? true : false;
