@@ -5,7 +5,11 @@ function Caleido(_escala, _color, _behavior) {
   this.c = _color;
   this.behavior = _behavior;
   this.linea = new Linea(this.escala, this.c, this.behavior);
-  this.div = random(1) < 0.6 ? 7:14;
+  if (random(1) < 0.5){
+    this.div = random(1) < 0.6 ? 6:12;
+  }else{
+    this.div = random(1) < 0.6 ? 7:14;
+  }
 }
 
 
