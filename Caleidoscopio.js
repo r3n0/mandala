@@ -28,6 +28,8 @@ Caleido.prototype.update = function() {
   }
   pop();
 }
+//cambios y
+
 
 Caleido.prototype.rezise = function(_escala) {
   this.escala = _escala;
