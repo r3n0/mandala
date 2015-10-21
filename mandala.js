@@ -1,7 +1,8 @@
 var diametro;
+var escala;
 var canvas;
 var margen = 10;
-var myCaleido = new Array(20);
+var myCaleido = new Array(10);
 var paleta ;
 
 
@@ -13,7 +14,7 @@ function setup() {
   background(0);
   translate(windowWidth / 2, windowHeight/2);
   for (var i = 0; i < myCaleido.length; i++) {
-    myCaleido[i] = new Caleido(diametro, setColor(i), setBehavior(i));
+    myCaleido[i] = new Caleido(escala, setColor(i), setBehavior(i));
   }
 }
 
@@ -28,7 +29,7 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   translate(windowWidth/2, windowHeight/2);
   for (var i = 0; i < myCaleido.length; i++) {
-    myCaleido[i].rezise(diametro);
+    myCaleido[i].rezise(escala);
   }
 }
 
@@ -38,6 +39,7 @@ function testSize() {
   } else {
     diametro = windowWidth;
   }
+  escala = diametro * 0.7;
   paleta = random(85);
 }
 
@@ -56,7 +58,11 @@ function setBehavior(i) {
   params[2] = random(0.00001, 0.1); // rango de rotación
   params[3] = random(0.001, 0.000001); //velosidad de rotación
   params[4] = random(0.01, 0.00001); // velosidad de tamaño
-  params[5] = random(1, diametro / 35)
-  params[6] = random(1) < 0.7 ? true : false;
+  params[5] = random(1, diametro / 40)
+  params[6] = random(1) < 0.5 ? true : false;
   return params;
+}
+
+function reSet(){
+  
 }

@@ -46,11 +46,11 @@ Linea.prototype.dibujar = function() {
     stroke(hue(this.c), 50, 100, 3);
     strokeWeight(this.tam / 7);
     ellipse(this.pos.x, this.pos.y, this.tam * 10, this.tam/3);
-}else{
-   noStroke();
-   fill(hue(this.c), saturation(this.c), 100, 10);
-   ellipse(this.pos.x, this.pos.y, this.tam, this.tam);
-}
+  }else{
+    noStroke();
+    fill(hue(this.c), saturation(this.c), 100, 10);
+    ellipse(this.pos.x, this.pos.y, this.tam, this.tam);
+  }
 }
 
 Linea.prototype.resize = function(_escala) {
