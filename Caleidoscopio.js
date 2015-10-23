@@ -28,7 +28,7 @@ Caleido.prototype.update = function() {
   }
   pop();
 }
-//cambios y
+//cambios y otros venenos
 
 
 Caleido.prototype.rezise = function(_escala) {
