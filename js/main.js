@@ -18,8 +18,8 @@ function setup() {
    frameRate(60);
    defineColorRange();
    getBoundary();
-   tamMin = diagonal / 280;
-   tamMax = diagonal / 180;
+   tamMin = diagonal / 300;
+   tamMax = diagonal / 150;
 
    c = new Control();
    c.initDraws();
@@ -69,7 +69,7 @@ function windowResized() {
 function getBoundary() {
    var pantalla = createVector(windowWidth, windowWidth)
    diagonal = pantalla.mag();
-   boundary = diagonal / 4;
+   boundary = diagonal / 2.5;
 }
 
 function reset() {

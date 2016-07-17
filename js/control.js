@@ -35,7 +35,7 @@ Control.prototype.initDraws = function() {
       noFill();
       strokeWeight(this.espesor3);
       stroke(this.colorin2);
-      var largo = this.pos1.x + (this.tam * 2 );
+      var largo = this.pos1.x + (this.tam * 3 );
 
       if (this.pregunta){
          var alto = this.pos1.y + (100 - (this.tam * 2));
@@ -58,7 +58,7 @@ Control.prototype.initDraws = function() {
 Control.prototype.itinDivs = function() {
    var index = floor(random(3, 8));
    var suma = index;
-   this.nP = 5;
+   this.nP = 8;
 
    for (var i = 0; i < this.draws.length; i++) {
       this.divs[i] = index;
