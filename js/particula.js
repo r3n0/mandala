@@ -38,13 +38,13 @@ function Particula() {
 }
 
 Particula.prototype.redefineColor = function() {
-   this.tono = random(rangoDeColor, rangoDeColor + colorShift);
-   this.sat = 50;
+   this.tono = 90;
+   this.sat = 0;
    this.lum = random(100, 255);
 
    this.colorin1 = color(this.tono, this.sat, this.lum,180);
    this.colorin2 = color(this.tono, this.sat - satShift, this.lum + 50, 5);
-   this.colorin3 = color(this.tono, 70, this.lum, 10);
+   this.colorin3 = color(this.tono, 0, this.lum, 10);
 };
 
 Particula.prototype.defineVelYTam = function() {

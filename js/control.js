@@ -56,7 +56,7 @@ Control.prototype.initDraws = function() {
 }
 
 Control.prototype.itinDivs = function() {
-   var index = 5; //    floor(random(3, 8)); // este es el polígono principal
+   var index = 6; //    floor(random(3, 8)); // este es el polígono principal
    var suma = index;
    this.nP = 8;
 

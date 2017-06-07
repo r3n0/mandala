@@ -19,7 +19,7 @@ function setup() {
    defineColorRange();
    getBoundary();
    tamMin = diagonal / 300;
-   tamMax = diagonal / 150;
+   tamMax = diagonal / 140;
 
    c = new Control();
    c.initDraws();
@@ -84,7 +84,7 @@ function keyPressed() {
 }
 
 function defineColorRange() {
-   colorShift = random(30);
-   satShift = random(40);
-   rangoDeColor = 100;
+   colorShift = 0;
+   satShift = 0;
+   rangoDeColor = 0;
 }
