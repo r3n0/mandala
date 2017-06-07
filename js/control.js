@@ -17,7 +17,7 @@ Control.prototype.initDraws = function() {
    this.draws[0] = function() {
       noStroke();
       fill(this.colorin1);
-      ellipse(this.pos1.x, this.pos1.y, this.tam, this.tam);
+      rect(this.pos1.x, this.pos1.y, this.tam, this.tam);
 
       noFill();
       strokeWeight(this.espesor1);
@@ -38,7 +38,7 @@ Control.prototype.initDraws = function() {
       var largo = this.pos1.x + (this.tam * 3 );
 
       if (this.pregunta){
-         var alto = this.pos1.y + (100 - (this.tam * 2));
+         var alto = this.pos1.y + (100 - (this.tam * 3));
       }else{
          var alto = this.pos1.y;
       }
@@ -56,7 +56,7 @@ Control.prototype.initDraws = function() {
 }
 
 Control.prototype.itinDivs = function() {
-   var index = floor(random(3, 8));
+   var index = 5; //    floor(random(3, 8)); // este es el polígono principal
    var suma = index;
    this.nP = 8;
 

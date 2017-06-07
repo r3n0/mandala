@@ -39,12 +39,12 @@ function Particula() {
 
 Particula.prototype.redefineColor = function() {
    this.tono = random(rangoDeColor, rangoDeColor + colorShift);
-   this.sat = random(170, 255);
+   this.sat = 50;
    this.lum = random(100, 255);
 
    this.colorin1 = color(this.tono, this.sat, this.lum,180);
    this.colorin2 = color(this.tono, this.sat - satShift, this.lum + 50, 5);
-   this.colorin3 = color(this.tono, this.sat - satShift * 2, this.lum, 5);
+   this.colorin3 = color(this.tono, 70, this.lum, 10);
 };
 
 Particula.prototype.defineVelYTam = function() {
@@ -69,11 +69,11 @@ Particula.prototype.update = function() {
 
    if (this.tam < 0) {
       this.espesor1 = this.tam * - 0.7;
-      this.espesor2 = this.tam * -0.4;
+      this.espesor2 = this.tam * -0.2;
       this.espesor3 = this.tam * -0.2;
    } else {
       this.espesor1 = this.tam * 0.7;
-      this.espesor2 = this.tam * 0.4;
+      this.espesor2 = this.tam * 0.2;
       this.espesor3 = this.tam * 0.2;
    }
 

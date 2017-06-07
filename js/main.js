@@ -15,7 +15,7 @@ function setup() {
    background(0);
    smooth();
    colorMode(HSB, 255);
-   frameRate(60);
+   frameRate(30);
    defineColorRange();
    getBoundary();
    tamMin = diagonal / 300;
@@ -84,7 +84,7 @@ function keyPressed() {
 }
 
 function defineColorRange() {
-   colorShift = random(80);
+   colorShift = random(30);
    satShift = random(40);
-   rangoDeColor = random(160 - colorShift);
+   rangoDeColor = 100;
 }
