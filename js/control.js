@@ -48,21 +48,20 @@ Control.prototype.initDraws = function() {
       ellipse(largo, alto, 1, 1);
    }
 
-   this.draws[2] = function() {
+   /*this.draws[2] = function() {
       noStroke();
       fill(this.colorin3);
       ellipse(this.pos1.x, this.pos1.y, this.tam, this.tam);
-   }
+  }*/
 }
 
 Control.prototype.itinDivs = function() {
-   var index = 6; //    floor(random(3, 8)); // este es el polígono principal
-   var suma = index;
-   this.nP = 8;
+ index = floor(random(4, 7)); // este es el polígono principal
+ rotar = radians(360 / index);
+   this.nP = (9 - index); // esta es la cantidad de partículas por grupo
 
    for (var i = 0; i < this.draws.length; i++) {
       this.divs[i] = index;
-      // index += suma;
       index *= 2;
    }
    console.log("las diviciones son: [" + this.divs + "]");

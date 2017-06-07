@@ -7,6 +7,7 @@ var alfa = 1;
 var diagonal;
 var colorShift = 0;
 var satShift = 0;
+var index, rotar, np;
 
 function setup() {
    canvas = createCanvas(windowWidth, windowHeight);
@@ -15,10 +16,10 @@ function setup() {
    background(0);
    smooth();
    colorMode(HSB, 255);
-   frameRate(30);
+   frameRate(18);
    defineColorRange();
    getBoundary();
-   tamMin = diagonal / 300;
+   tamMin = diagonal / 280;
    tamMax = diagonal / 140;
 
    c = new Control();
