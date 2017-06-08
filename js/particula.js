@@ -63,8 +63,6 @@ Particula.prototype.update = function() {
     this.direccion = map(noise(this.tR), 0, 1, -this.rangoRot, this.rangoRot);
     this.check();
 
-
-
     var r = random(1);
 
     if (r < 0.005){
@@ -88,11 +86,9 @@ Particula.prototype.update = function() {
     if (this.tam < 0) {
         this.espesor1 = this.tam * - 0.7;
         this.espesor2 = this.tam * -0.2;
-        this.espesor3 = this.tam * -0.2;
     } else {
         this.espesor1 = this.tam * 0.7;
         this.espesor2 = this.tam * 0.2;
-        this.espesor3 = this.tam * 0.2;
     }
 
     this.tT += this.velTam;

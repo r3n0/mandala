@@ -16,11 +16,11 @@ function setup() {
    background(0);
    smooth();
    colorMode(HSB, 255);
-   frameRate(18);
+   frameRate(60);
    defineColorRange();
    getBoundary();
-   tamMin = diagonal / 280;
-   tamMax = diagonal / 140;
+   tamMin = diagonal / 200;
+   tamMax = diagonal / 150;
 
    c = new Control();
    c.initDraws();
@@ -50,7 +50,7 @@ function transicion() {
       alfa = 1;
       c.reset();
    } else {
-      alfa += 64;
+      alfa += 52;
    }
 
    fill(0, alfa);
@@ -70,7 +70,7 @@ function windowResized() {
 function getBoundary() {
    var pantalla = createVector(windowWidth, windowWidth)
    diagonal = pantalla.mag();
-   boundary = diagonal / 2.5;
+   boundary = diagonal / 2.6;
 }
 
 function reset() {
