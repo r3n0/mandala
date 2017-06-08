@@ -16,7 +16,7 @@ function setup() {
    background(0);
    smooth();
    colorMode(HSB, 255);
-   frameRate(60);
+   frameRate(20);
    defineColorRange();
    getBoundary();
    tamMin = diagonal / 200;
