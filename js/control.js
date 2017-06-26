@@ -45,22 +45,21 @@ Control.prototype.initDraws = function() {
             ellipse(this.pos1.x, this.pos1.y, 1, 1);
             ellipse(largo, alto, 1, 1);
         }
-
     }
 
     this.draws[1] = function() {
 
         noStroke();
         fill(this.colorin3);
-        var tamS = this.tam * 0.6;
+        var tamS = this.tam; //* 0.6;
         ellipse(this.pos1.x, this.pos1.y, tamS, tamS);
     }
 }
 
 Control.prototype.itinDivs = function() {
-    index = floor(random(4, 7)); // este es el polígono principal
+    index = floor(random(3, 8)); // este es el polígono principal
     rotar = radians(360 / index);
-    this.nP = (11 - index); // esta es la cantidad de partículas por grupo
+    this.nP = (9 - ceil(index/2)); // esta es la cantidad de partículas por grupo
 
     for (var i = 0; i < this.draws.length; i++) {
         this.divs[i] = index;

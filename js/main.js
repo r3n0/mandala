@@ -15,12 +15,13 @@ function setup() {
    canvas.position(0, 0);
    background(0);
    smooth();
+   noCursor();
    colorMode(HSB, 255);
    frameRate(20);
    defineColorRange();
    getBoundary();
    tamMin = diagonal / 200;
-   tamMax = diagonal / 150;
+   tamMax = diagonal / 140;
 
    c = new Control();
    c.initDraws();
