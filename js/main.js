@@ -81,6 +81,10 @@ function reset() {
    //save(canvas, "madalita" + round(random(100000)) +  ".jpg");
 }
 
+function mouseClicked() {
+    setup();
+}
+
 function keyPressed() {
    if (key == " ") reset();
 }
@@ -89,4 +93,9 @@ function defineColorRange() {
    colorShift = 0;
    satShift = 0;
    rangoDeColor = 0;
+}
+
+function mouseMoved() {
+    check();
+    c.display();
 }

@@ -59,7 +59,7 @@ Control.prototype.initDraws = function() {
 Control.prototype.itinDivs = function() {
     index = floor(random(3, 8)); // este es el polígono principal
     rotar = radians(360 / index);
-    this.nP = (9 - ceil(index/2)); // esta es la cantidad de partículas por grupo
+    this.nP = (8 - ceil(index/2)); // esta es la cantidad de partículas por grupo
 
     for (var i = 0; i < this.draws.length; i++) {
         this.divs[i] = index;
