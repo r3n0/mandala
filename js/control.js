@@ -58,7 +58,7 @@ Control.prototype.initDraws = function() {
 Control.prototype.itinDivs = function() {
    var index = floor(random(3, 8));
    var suma = index;
-   this.nP = 8;
+   this.nP = (8 - ceil(index/2)); // esta es la cantidad de partículas por grupo
 
    for (var i = 0; i < this.draws.length; i++) {
       this.divs[i] = index;
