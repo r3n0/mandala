@@ -15,7 +15,7 @@ function setup() {
    background(0);
    smooth();
    colorMode(HSB, 255);
-   frameRate(60);
+   frameRate(10);
    defineColorRange();
    getBoundary();
    tamMin = diagonal / 300;
@@ -87,4 +87,13 @@ function defineColorRange() {
    colorShift = random(80);
    satShift = random(40);
    rangoDeColor = random(160 - colorShift);
+}
+
+function mouseMoved() {
+    check();
+    c.display();
+}
+
+function mouseClicked() {
+    setup();
 }
